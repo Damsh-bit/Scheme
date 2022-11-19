@@ -1,16 +1,24 @@
 import React from "react";
 import "./services.css";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Services = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500
+    });
+  },[])
   return (
     <div>
       <section id="Services" className="services__section bg ">
         <div className="services__content section container">
-          <span className="subtitle"> Our Services </span>
-          <h1>We specialise in</h1>
+          <span data-aos="fade-down" className="subtitle"> Our Services </span>
+          <h1 data-aos="fade-down">We specialise in</h1>
 
           <div className="services__container">
-            <div className="services__box">
+            <div data-aos="flip-down" className="services__box">
               <i class="uil uil-window"></i>
               <h3>UI/UX Design</h3>
               <span>
@@ -19,7 +27,7 @@ const Services = () => {
               </span>
             </div>
 
-            <div className="services__box">
+            <div data-aos="flip-down" className="services__box">
               <i class="uil uil-window-grid"></i>
               <h3>Web Design</h3>
               <span>
@@ -28,7 +36,7 @@ const Services = () => {
               </span>
             </div>
 
-            <div className="services__box">
+            <div data-aos="flip-down" className="services__box">
               <i class="uil uil-heart"></i>
               <h3>Branding</h3>
               <span>
@@ -37,7 +45,7 @@ const Services = () => {
               </span>
             </div>
 
-            <div className="services__box">
+            <div data-aos="flip-down" className="services__box">
               <i class="uil uil-film"></i>
               <h3>Animation</h3>
               <span>
@@ -46,7 +54,7 @@ const Services = () => {
               </span>
             </div>
 
-            <div className="services__box">
+            <div data-aos="flip-down" className="services__box">
               <i class="uil uil-pen"></i>
               <h3>Illustration</h3>
               <span>
@@ -56,7 +64,7 @@ const Services = () => {
               </span>
             </div>
 
-            <div className="services__box">
+            <div data-aos="flip-down" className="services__box">
               <i class="uil uil-brackets-curly"></i>
               <h3>Development</h3>
               <span>
