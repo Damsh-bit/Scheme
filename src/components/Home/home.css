@@ -40,10 +40,10 @@
   transition: all 0.5s;
 }
 
-.home__buttons a{
+.home__buttons a {
   color: white;
 }
-.home__buttons a:hover{
+.home__buttons a:hover {
   color: orange;
 }
 
@@ -84,4 +84,54 @@
 
 .home__image .img2 {
   padding-top: 30px;
+}
+
+@media screen and (max-width: 1367px) {
+  .home__content {
+    width: 100%;
+  }
+  .home__content h1 {
+    font-size: 35px;
+  }
+
+  .home__content span {
+    color: #9a948e;
+    line-height: 1.8em;
+    font-size: 15px;
+  }
+
+  .img1 {
+    height: 350px;
+  }
+
+  .img2 {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .home__content h1 {
+    font-size: 35px;
+  }
+
+  .home__content span {
+    color: #9a948e;
+    line-height: 1.8em;
+    font-size: 15px;
+  }
+
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home__content {
+    padding: 5px;
+    max-width: 300px;
+  }
 }

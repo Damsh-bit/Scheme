@@ -54,3 +54,26 @@
   border: #9a948e 1px solid;
   color: black;
 }
+
+
+@media screen and (max-width: 1367px) {
+  .about__content h1 {
+    font-size: 35px;
+  }
+  
+  .about__content span {
+    font-size: 15px;
+  }
+  
+  .about__image img{
+    height: 350px;
+    width: 350px;
+  };
+}
+
+
+@media screen and (max-width: 400px) {
+  .about__container {
+    gap: 0;
+  }
+}

@@ -50,3 +50,15 @@ nav button {
   font-weight: 700;
   cursor: pointer;
 }
+
+
+@media screen and (max-width : 900px) {
+  .navbar{
+    flex-direction: column;
+  }
+
+  nav div{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
